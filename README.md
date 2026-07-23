@@ -1,6 +1,6 @@
 
 # 🧪 Web Automation Testing Project  
-### Playwright & Cypress on React Portfolio
+# Playwright & Cypress on React Portfolio
 
 This project demonstrates automated testing of a React-based portfolio website using **Playwright** and **Cypress**. The objective is to test core user flows, UI elements, and form validation while comparing both tools practically.
 
@@ -117,7 +117,7 @@ npx cypress open
 ```
 
 
-### Selenium (Python) and Robot Framework
+# Selenium (Python) and Robot Framework
 
 This project demonstrates web automation testing using **Selenium (Python)** and **Robot Framework**. It includes scripted browser tests against [the-internet.herokuapp.com](https://the-internet.herokuapp.com), covering navigation, form login, and success validation with explicit waits and clear assertions.
 
@@ -176,6 +176,147 @@ robot robot_tests/test_case.robot
 ## Reflection Note
 
 Robot Framework felt easier for a straightforward login flow because built-in keywords like `Open Browser`, `Input Text`, and `Page Should Contain` read like plain English and require less boilerplate. Selenium with Python offered more control for reusable helpers, explicit waits, and structured assertions in `utils.py`, but needed more setup code. Challenges included matching stable locators (ID and CSS over long XPath), handling timing with explicit waits instead of fixed sleeps, and ensuring ChromeDriver compatibility via `webdriver-manager`. SQA engineers reviewing AI-generated scripts should run them locally, inspect selectors against the live DOM, confirm assertions match real expected behavior, add edge-case and negative tests, and treat generated code as a draft that still needs human review, maintenance, and integration into CI.
+
+
+# 📱 Appium Mobile Automation Project
+
+## 🚀 Project Overview
+This project demonstrates a basic mobile automation testing setup using **Appium with Python**. It covers launching an Android emulator or real device, interacting with a mobile application, and validating user actions through automated test scripts.
+
+---
+
+## 🛠️ Tools & Technologies
+- Appium  
+- Python  
+- Selenium WebDriver  
+- Android Studio (Emulator)  
+- Node.js  
+
+---
+
+## 📁 Project Structure
+
+```
+
+appium/
+│── tests/
+│   ├── test_mobile.py
+│
+│── utils/
+│   ├── driver_setup.py
+│
+│── requirements.txt
+│── README.md
+
+````
+
+---
+
+## ✅ Features
+- Appium environment setup  
+- Android emulator/device integration  
+- Launch mobile application  
+- Tap on elements  
+- Enter text input  
+- Validate result screen  
+
+---
+
+## 📲 Test Scenario
+
+### Mobile Automation Flow:
+1. Launch Android emulator/device  
+2. Open mobile application (Chrome browser)  
+3. Tap on search/input field  
+4. Enter text: **"Appium Test"**  
+5. Submit/search  
+6. Verify result screen is displayed  
+
+---
+
+## ⚙️ Setup Instructions
+
+### 1️⃣ Install Node.js
+Download from: https://nodejs.org  
+
+### 2️⃣ Install Appium
+```bash
+npm install -g appium
+````
+
+### 3️⃣ Start Appium Server
+
+```bash
+appium
+```
+
+### 4️⃣ Install Python Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 5️⃣ Setup Android Emulator
+
+* Install Android Studio
+* Create Virtual Device (AVD)
+* Start Emulator
+
+OR connect a real Android device (USB Debugging ON)
+
+---
+
+## ▶️ Run Test
+
+```bash
+python appium/tests/test_mobile.py
+```
+
+---
+
+## 🎯 Expected Output
+
+* Emulator/device launches
+* App opens successfully
+* Text is entered
+* Result screen appears
+* Test passes
+
+---
+
+## ⚠️ Issues & Challenges
+
+Common issues you may face:
+
+* Appium server not starting
+* Device/emulator not detected
+* Incorrect desired capabilities
+* Missing environment variables (ANDROID_HOME, JAVA_HOME)
+
+If setup fails, include screenshots of:
+
+* Errors
+* Installation steps
+* Script execution
+
+---
+
+## 📚 Learning Outcome
+
+* Understanding Appium setup
+* Writing mobile automation scripts
+* Performing user interactions (tap, input)
+* Validating mobile UI behavior
+
+---
+
+## 🧠 Conclusion
+
+This project provides a beginner-friendly introduction to mobile automation testing using Appium and helps build strong foundations for QA engineers.
+
+---
+
+
 
 
 

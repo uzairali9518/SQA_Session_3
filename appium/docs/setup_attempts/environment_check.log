@@ -1,0 +1,6 @@
+﻿=== Environment Check (2026-07-23 05:15) ===
+Appium: 3.5.2
+adb: NOT FOUND (Android SDK platform-tools not in PATH)
+ANDROID_HOME: 
+ANDROID_SDK_ROOT: 
+Android SDK default path: NOT FOUND

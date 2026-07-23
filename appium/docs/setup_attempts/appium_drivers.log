@@ -1,0 +1,9 @@
+﻿node.exe : - Listing installed drivers (rerun with --verbose for more info)
+At C:\Users\Samsung\AppData\Roaming\npm\appium.ps1:24 char:5
++     & "node$exe"  "$basedir/node_modules/appium/index.js" $args
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (- Listing insta... for more info):String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+ΓêÜ Listing installed drivers (rerun with --verbose for more info)
+- uiautomator2@8.1.1 [installed (npm)]
